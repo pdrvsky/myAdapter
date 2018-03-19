@@ -40,9 +40,9 @@ public class Client {
         client.DoSomethingImportant5();
     }
 
-    private ValidInformation info = null;
+    private INFZValidInformationAdapter info = null;
 
-    public Client(ValidInformation info) {
+    public Client(INFZValidInformationAdapter adapt) {
         this.info = info;
     }
     

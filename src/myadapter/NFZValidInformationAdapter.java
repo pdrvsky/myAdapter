@@ -23,7 +23,13 @@ public class NFZValidInformationAdapter implements INFZValidInformationAdapter {
 
     @Override
     public String[] GeListOfMedicalFacility() {
-        return _validInformation.GeListOfMedicalFacility(null);
+        String[] clinics = _validInformation.GeListOfClinic(null);
+        String[] hospitals = _validInformation.GeListOfHospital(null);
+        String[] merge = new String[clinics.length + hospitals.length];
+        
+        System.arraycopy(clinics, 0, merge, 0, clinics.length);
+        System.arraycopy(hospitals, 0, merge, clinics.length, hospitals.length);
+        return merge;
     }
     
     public NFZValidInformationAdapter(IValidInformation vi) {
