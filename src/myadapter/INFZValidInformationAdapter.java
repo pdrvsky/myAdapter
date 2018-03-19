@@ -13,5 +13,5 @@ import java.util.List;
  */
 public interface INFZValidInformationAdapter {
     public String[] GetRefundedListOfDrugs();
-    public String[] GeListOfMedicalFacility(String string);
+    public String[] GeListOfMedicalFacility();
 }

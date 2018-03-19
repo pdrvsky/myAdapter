@@ -22,8 +22,8 @@ public class NFZValidInformationAdapter implements INFZValidInformationAdapter {
     }
 
     @Override
-    public String[] GeListOfMedicalFacility(String string) {
-        return _validInformation.GeListOfMedicalFacility(string);
+    public String[] GeListOfMedicalFacility() {
+        return _validInformation.GeListOfMedicalFacility(null);
     }
     
     public NFZValidInformationAdapter(IValidInformation vi) {
