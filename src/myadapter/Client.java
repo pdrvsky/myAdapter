@@ -35,6 +35,8 @@ public class Client {
         client.DoSomethingImportant3();
         client.DoSomethingImportant4();
         client.DoSomethingImportant5();
+
+	/* GIT TEST */
     }
 
     private ValidInformation info = null;
